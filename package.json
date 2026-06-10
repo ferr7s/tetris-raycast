@@ -1,0 +1,41 @@
+{
+  "name": "tetris-raycast",
+  "title": "Tetris",
+  "description": "Play a compact Tetris game inside Raycast.",
+  "icon": "icon.png",
+  "author": "matheus_ferrari",
+  "platforms": ["macOS", "Windows"],
+  "categories": ["Fun"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Play Tetris",
+      "description": "Play Tetris in a Raycast detail view.",
+      "mode": "view",
+      "keywords": ["game", "blocks", "puzzle"]
+    }
+  ],
+  "scripts": {
+    "dev": "ray develop",
+    "build": "ray build",
+    "lint": "ray lint",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@raycast/api": "^1.94.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
