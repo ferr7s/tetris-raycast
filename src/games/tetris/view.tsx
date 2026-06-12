@@ -107,22 +107,22 @@ function TetrisActions({ state, dispatch }: TetrisActionProps) {
       <ActionPanel.Section title="Movement">
         <Action
           title="Move Left"
-          shortcut={{ modifiers: ["opt"], key: "arrowLeft" }}
+          shortcut={{ modifiers: ["shift"], key: "arrowLeft" }}
           onAction={() => dispatch({ type: "move-left" })}
         />
         <Action
           title="Move Right"
-          shortcut={{ modifiers: ["opt"], key: "arrowRight" }}
+          shortcut={{ modifiers: ["shift"], key: "arrowRight" }}
           onAction={() => dispatch({ type: "move-right" })}
         />
         <Action
           title="Rotate"
-          shortcut={{ modifiers: ["opt"], key: "arrowUp" }}
+          shortcut={{ modifiers: ["shift"], key: "arrowUp" }}
           onAction={() => dispatch({ type: "rotate" })}
         />
         <Action
           title="Soft Drop"
-          shortcut={{ modifiers: ["opt"], key: "arrowDown" }}
+          shortcut={{ modifiers: ["shift"], key: "arrowDown" }}
           onAction={() => dispatch({ type: "soft-drop" })}
         />
         <Action
